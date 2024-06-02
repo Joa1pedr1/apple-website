@@ -4,6 +4,8 @@
     --title-primary-color: #f5f5f7;
     --subtitle-color: #6e6e73;
     --action-color: #2997ff;
+    --appletv-main-color: #DED2B9;
+    --text-dark-color: #1D1D1F;
 }
 
 header{
@@ -33,4 +35,145 @@ header nav ul li{
     font-size: small;
     cursor:  pointer;
     list-style: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+main section{
+    text-align: center;
+    position: relative;
+
+}
+
+main section img{
+    width: 100%;
+    height: auto;
+}
+
+main section a{
+    color: var(--action-color);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer; /*tornando a frase clicável*/
+}
+
+main section a:hover{ /*hover é uma pseudo-classe em CSS que ativa estilos em um determinado elemento.*/
+    text-decoration: underline;/*deixando a frase sublinhada*/
+}
+
+main .main-section h1{
+    color: var(--title-primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .main-section h2{
+    color: var(--subtitle-color);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+}
+
+main .main-section sub{
+    font-size: 0.9rem;
+}
+
+main .main-section .text-wrapper{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+}
+
+main .appletv-section > div{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .appletv-section > div:last-child{
+    bottom: 3.5%;
+}
+
+main .appletv-section > div:first-child{
+    top: 57px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 60%;
+}
+
+main .appletv-section > div:first-child p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--appletv-main-color);
+    letter-spacing: -0.6px;
+
+}
+
+main .appletv-section p{
+    color: var(--title-primary-color);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.8px;
+}
+
+main .appletv-section span{
+    color: var(--text-light);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    display: block;
+    letter-spacing: 0.23px;
+    cursor: pointer;
+}
+
+main .appletv-section span:hover{ /*hover é uma pseudo-classe em CSS que ativa estilos em um determinado elemento.*/
+    text-decoration: underline;/*deixando a frase sublinhada*/
+}
+
+main .iphone-section h2{
+    color: var(--text-dark-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .iphone-section p{
+    color: var(--text-dark-color);
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+}
+
+main .iphone-section .link-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+main .iphone-section .text-wrapper{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
 }
